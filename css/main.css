@@ -407,6 +407,100 @@ button.btn_about{
 }
 section.price{
     height: 900px;
-    margin-top: 80px;
     background-color: #e7edf3;
 }
+div.pricing-heading>h1{
+    font-family: "Lato Light", sans-serif;
+    font-size: 21px;
+    color: #394b50;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+div.pricing-heading>p{
+    font-family: "Lato Light", sans-serif;
+    font-size: 13px;
+    color: #75888d;
+    text-align: center;
+    line-height: 1.5;
+}
+div.basic-plan, div.gold-plan, div.premium-plan{
+    margin-top: 83px;
+    width: 390px;
+    height: 440px;
+    background-color: #FFFFFF;
+    border: 1px solid #ccd5df;
+}
+div.basic-plan>h2, div.gold-plan>h2, div.premium-plan>h2{
+    font-family: "Lato Light", sans-serif;
+    font-size: 17px;
+    color: #818b95;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-top: 55px;
+}
+div.basic-plan>p, div.gold-plan>p, div.premium-plan>p{
+    font-family: "Lato Light", sans-serif;
+    font-size: 43px;
+    color: #ffbb42;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+div.basic-plan>h1.per, div.gold-plan>h1.per, div.premium-plan>h1.per{
+    font-family: "Lato Light", sans-serif;
+    font-size: 10px;
+    color: #818b95;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+div.basic-plan>h1.account, div.gold-plan>h1.account, div.premium-plan>h1.account{
+    font-family: "Lato Light", sans-serif;
+    font-size: 10px;
+    color: #b5bbc1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e2e9f0;
+    border-top: 1px solid #e2e9f0;
+}
+div.basic-plan>h1.services, div.gold-plan>h1.services, div.premium-plan>h1.services {
+    font-family: "Lato Light", sans-serif;
+    font-size: 10px;
+    color: #b5bbc1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+div.basic-plan>button, div.gold-plan>button, div.premium-plan>button {
+    width: 130px;
+    height: 42px;
+    font-family: "Lato Light", sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 1px;
+    border: none;
+    background-color: #ffbb42 ;
+    margin-top: 35px;
+    margin-left: 130px;
+}
+button:focus{
+    outline: none!important;
+}
+div.basic-plan:hover, div.gold-plan:hover, div.premium-plan:hover{
+    margin-top: 30px;
+    width: 390px;
+    height: 500px;
+    background-color: #709dca;
+    border: none;
+    color: #FFFFFF;
+}
+
+
