@@ -1,0 +1,413 @@
+/*!
+ * Стартовый шаблон для HTML-верстки
+ * Версия: 1.1
+ * Автор: Алексей Морозов
+ * Сайт: https://itcity.by
+ * Группа VK: https://vk.com/itcity.minsk
+ * Instagram: https://instagram.com/itcityby
+ *
+ * Copyright Alexey Morozov 2018.
+ */
+
+*::-webkit-input-placeholder        {color: #666666;	opacity: 1;}
+*:-moz-placeholder                  {color: #666666;	opacity: 1;}
+*::-moz-placeholder                 {color: #666666; opacity: 1;}
+*:-ms-input-placeholder             {color: #666666; opacity: 1;}
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+body{
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+}
+
+a{
+	-webkit-transition: all ease-in .2s;
+	-o-transition: all ease-in .2s;
+	transition: all ease-in .2s;
+}
+
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+
+.relative{position: relative;}
+.absolute{position: absolute;}
+.fixed{position: fixed;}
+.static{position: static;}
+
+.null{padding-left: 0; padding-right: 0;}
+.null-left{padding-left: 0;}
+.null-right{padding-right: 0;}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-responsive{
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+.popup{display: none;}
+.popup .popup-title{
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+/* Селекторы для стилизации меню */
+.menu{}
+.menu > ul{}
+.menu > ul > li{}
+.menu > ul > li > a{}
+.menu > ul > li.active > a, .menu > ul > li:hover > a{}
+
+/* Селекторы для стилизации форм */
+.form{}
+.form .form-title{}
+.form input[type="text"], .form textarea{}
+.form textarea{}
+.form input[type="text"]:focus, .form textarea:focus{}
+.form input[type="submit"], .form input[type="reset"]{}
+.form input[type="submit"]:hover, .form input[type="reset"]:hover{}
+.form label{}
+.form label.error{}
+
+/* Селекторы для стилизации контента */
+.content h1, .content h2, .content h3{}
+.content h1{}
+.content h2{}
+.content h3{}
+.content p{}
+.content strong{}
+.content em{}
+.content a{}
+.content a:hover{}
+.content img{}
+.content table{}
+.content table tr th, .content table tr td{}
+.content table tr td{}
+.content ul, .content ol{}
+.content ul li .content ol li{}
+
+.navigation{
+	display: flex;
+	height: 93px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.aligned-container{
+	padding-left: 12.5%;
+	padding-right: 12.5%;
+}
+
+.navigation-items{
+	display: flex;
+	margin-left: auto;
+}
+
+img.logo{
+	background-size: 48px 50px;
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+
+.navigation-items > li{
+	margin-right: 5px;
+	white-space:nowrap;
+}
+
+.navigation-items>li>a{
+	font-family: "Gotham Black", sans-serif;
+	font-size: 10px;
+	color: #868686;
+	text-transform: uppercase;
+	border-radius: 3px;
+	padding: 12px 20px 12px 21px;
+	display: block;
+}
+.navigation-items >li>a:hover{
+	background-color: #ffbb42;
+	color: #ffffff;
+}
+
+.banner{
+	height: 690px;
+/*	background-color: #709dca;*/
+    background: url("../images/1.png") center top no-repeat;
+	padding-top: 110px;
+}
+
+.heading1{
+	font-family: "Gotham Black", sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-weight: 900;
+	text-align: center;
+	line-height: 1.5;
+}
+.paragraph{
+	font-family: "OpenSans Light", sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.request{
+	margin-top: 35px;
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 0 46px 0 41px;
+	/*border-radius: 1px;*/
+}
+input.name, input.address, input.number{
+	height: 46px;
+	width: 100%;
+	margin-right: 10px;
+	padding: 18px 40px 18px 40px;
+	background-color: #FFFFFF;
+	border: none;
+	font-size: 10px;
+}
+
+button.request_button{
+	height: 46px;
+	width: 100%;
+	padding: 0 20px;
+	background-color: #ffbb42;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border: none;
+}
+/*Стилизация подсказок в input*/
+/*::-webkit-input-placeholder {color:#b4b4b4;}*/
+/*::-moz-placeholder          {color:#b4b4b4;}!* Firefox 19+ *!*/
+/*:-moz-placeholder           {color:#b4b4b4;}!* Firefox 18- *!*/
+/*:-ms-input-placeholder*/
+
+.name {
+	background: url(../images/person.png) no-repeat;
+	background-position: 15px 15px;
+}
+.address{
+	background: url(../images/letter.png) no-repeat;
+	background-position: 15px 18px;
+
+}
+.number{
+	background: url(../images/phone.png) no-repeat;
+	background-position: 15px 18px;
+}
+
+.form-group{
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+@media (max-width: 1240px){
+	.request{
+		flex-wrap: wrap;
+	}
+}
+.laptop{
+    margin-top: 66px;
+    width: 645px;
+    height: 345px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+img.right{
+    position: absolute;
+    z-index: 1;
+    margin-top: -190px;
+    margin-left: 1040px;
+}
+img.left{
+    position: absolute;
+    z-index: 2;
+    margin-top: -190px;
+    margin-left: 480px;
+}
+.elipce{
+    text-align: center;
+}
+input.slide1, input.slide2, input.slide3{
+    display: none;
+}
+label{
+    display: inline-block;
+}
+i{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #dedfe0;
+    position: relative;
+    margin-top: 22px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+input[type=radio].slide1+i, input[type=radio].slide2+i, input[type=radio].slide3+i{
+    border-radius: 50px;
+}
+i:before{
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    border: 2px solid #dedfe0;
+    top: 1px; bottom: 1px;
+    left: 1px; right: 1px;
+    transform: scale(0);
+    transition: .1s;
+}
+input:checked+i:before{
+    transform: scale(1);
+    border-color: #3fb5e2;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+}
+.slide-images{
+    position: absolute;
+    width: 1340px;
+    height: 265px;
+}
+img.image{
+    position: absolute;
+    width: 445px;
+    height: 265px;
+    overflow: hidden;
+    z-index: 3;
+    top:-326px;
+    left: 540px;
+}
+section.service-heading{
+    margin-top: 75px;
+    text-align: center;
+}
+section>h2{
+    font-family: "Gotham Black", sans-serif;
+    font-size: 21px;
+    color: #394b50;
+    text-transform: uppercase;
+    line-height: 1.3;
+    font-weight: 900;
+}
+section>p{
+    font-family: "OpenSans Light", sans-serif;
+    font-size: 12px;
+    color: #616f73;
+    line-height: 1.3;
+}
+.service{
+    margin-top: 80px;
+}
+figure>img{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+figure>img.s6{
+     width: 33px;
+     height: 55px;
+}
+figure>img.S3{
+    width: 62px;
+    height: 42px;
+}
+p.title{
+    font-family: "Lato Bold", sans-serif;
+    color: #394b50;
+    text-transform: uppercase;
+    font-size: 11px ;
+    font-weight: 700;
+}
+p.text{
+    color: #7b7b7b;
+    font-size: 10px;
+    font-family: "OpenSans Light", sans-serif;
+    margin-top: 22px;
+    line-height: 1.5;
+}
+figcaption{
+    position: relative;
+    display: inline-block;
+    margin-left: 82px;
+    width: 410px;
+    margin-bottom: 80px;
+}
+section.about{
+    height: 623px;
+    background-image: url("../images/about-us.png");
+    background-position: inherit;
+}
+img.about_img{
+    width: 100%;
+    height: 623px;
+}
+div.about_us{
+    margin-top: 85px;
+    padding-left: 80px;
+}
+div.about_us>h1{
+    font-family: "Gotham Black", sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+div.about_us>p{
+    margin-top: 28px;
+    font-family: "OpenSans Light", sans-serif;
+    font-size: 10px;
+    line-height: 2.0;
+    color: #FFFFFF;
+}
+button.btn_about{
+    width: 145px;
+    height: 45px;
+    background-color: #ffc155;
+    margin-top: 60px;
+    border: 1px solid #e7ad48;
+    border-radius: 1px;
+}
+button.btn_about{
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: "Lato Regular", sans-serif;
+}
+.btn_about:focus{
+    outline: none!important;
+}
+section.price{
+    height: 900px;
+    margin-top: 80px;
+    background-color: #e7edf3;
+}
+.
