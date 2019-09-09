@@ -416,6 +416,7 @@ div.pricing-heading>h1{
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
+    padding-top: 135px;
 }
 div.pricing-heading>p{
     font-family: "Lato Light", sans-serif;
@@ -424,9 +425,14 @@ div.pricing-heading>p{
     text-align: center;
     line-height: 1.5;
 }
+/*.clearfix:before, .clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}*/
 div.basic-plan, div.gold-plan, div.premium-plan{
     margin-top: 83px;
-    width: 390px;
+    width: 380px;
     height: 440px;
     background-color: #FFFFFF;
     border: 1px solid #ccd5df;
@@ -467,6 +473,9 @@ div.basic-plan>h1.account, div.gold-plan>h1.account, div.premium-plan>h1.account
     border-bottom: 1px solid #e2e9f0;
     border-top: 1px solid #e2e9f0;
 }
+div>h1.account:nth-of-type(3){
+    border-top: #181818;
+}
 div.basic-plan>h1.services, div.gold-plan>h1.services, div.premium-plan>h1.services {
     font-family: "Lato Light", sans-serif;
     font-size: 10px;
@@ -495,12 +504,168 @@ button:focus{
     outline: none!important;
 }
 div.basic-plan:hover, div.gold-plan:hover, div.premium-plan:hover{
-    margin-top: 30px;
+    margin-top: 50px;
     width: 390px;
     height: 500px;
     background-color: #709dca;
     border: none;
+    padding-top: 35px;
+}
+section.about>div.row{
+    margin-left: -15px;
+    margin-right: 0px;
+}
+div.basic-plan:hover>h2, div.gold-plan:hover>h2, div.premium-plan:hover>h2{
     color: #FFFFFF;
 }
-
-
+div.basic-plan:hover>p, div.gold-plan:hover>p, div.premium-plan:hover>p{
+    color: #FFFFFF;
+}
+div.basic-plan:hover>h1.per, div.gold-plan:hover>h1.per, div.premium-plan:hover>h1.per{
+    color: #FFFFFF;
+}
+div.basic-plan:hover>h1.account, div.gold-plan:hover>h1.account, div.premium-plan:hover>h1.account{
+    color: #FFFFFF;
+}
+div.basic-plan:hover>h1.services, div.gold-plan:hover>h1.services, div.premium-plan:hover>h1.services{
+    color: #FFFFFF;
+}
+section.work{
+    height: 860px;
+    background-color: #FFFFFF;
+}
+div.about-work>h1{
+    font-family: "Lato Light", sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #394b50;
+    text-align: center;
+    margin-top: 155px;
+}
+div.about-work>p{
+    font-family: "Lato Light", sans-serif;
+    font-size: 14px;
+    color: #394b50;
+    text-align: center;
+    line-height: 1.8;
+}
+div.arrow1, div.arrow2, div.arrow3{
+    display: inline-block;
+}
+div.arrow1>img, div.arrow2>img, div.arrow3>img{
+    height: 35px;
+    width: 135px;
+}
+div.arrow1>img, div.arrow3>img{
+    margin-top: -80px;
+}
+div.arrow2>img{
+    margin-bottom: 100px;
+}
+div.arrow2{
+    transform: rotate(180deg);
+}
+div.step1{
+    margin-top: 110px;
+    display: inline-block;
+    margin-left: 100px;
+}
+div.step1>img{
+    height: 61px;
+    width: 73px;
+}
+div.step2{
+    margin-top: 110px;
+    display: inline-block;
+}
+div.step2>img{
+    height: 66px;
+    width: 52px;
+}
+div.step3{
+    margin-top: 110px;
+    display: inline-block;
+}
+div.step3>img{
+    height: 62px;
+    width: 83px;
+}
+div.step4{
+    margin-top: 110px;
+    display: inline-block;
+}
+div.step4>img{
+    height: 70px;
+    width: 67px;
+}
+div.arrow1{
+    margin-left: 40px;
+    margin-right: 50px;
+}
+div.arrow2{
+    margin-left: 50px;
+    margin-right: 40px;
+}
+div.arrow3{
+    margin-left: 40px;
+    margin-right: 50px;
+}
+div.steps1, div.steps2, div.steps3, div.steps4{
+    max-width: 289px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 55px;
+    text-align: center;
+}
+div.steps1>h1, div.steps2>h1, div.steps3>h1, div.steps4>h1{
+    font-family: "Lato Light", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #394b50;
+    font-weight: 600;
+    padding-top: 100px;
+    text-align: center;
+}
+div.steps1>p, div.steps2>p, div.steps3>p, div.steps4>p{
+    font-family: "Lato Light", sans-serif;
+    font-size: 10px;
+    color: #394b50;
+    line-height: 2.0;
+    padding-top: 28px;
+}
+div.step-button{
+    text-align: center;
+}
+.steps-button{
+    width: 165px;
+    height: 46px;
+    background-color: #ffbb42;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: none;
+    border-radius: 1px;
+    margin-top: 95px;
+    margin-bottom: 150px;
+}
+section.clients{
+    height: 910px;
+    background-color: #ffc155;
+}
+div.happy-clients>h1{
+     font-family: "Lato Light", sans-serif;
+     text-align: center;
+     color: #FFFFFF;
+     text-transform: uppercase;
+     font-weight: 900;
+     padding-top: 140px;
+     font-size: 21px;
+ }
+div.happy-clients>p{
+    font-family: "Lato Light", sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.5;
+    font-size: 13px;
+}
